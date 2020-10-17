@@ -20,7 +20,7 @@ client.on("ready", () => {
   client.user.setPresence({
        status: "online",
        activity: {
-        name: '🎬 JoJo Rabbit ➜ Tonight, 10pm',
+        name: 'Have a nice day!',
         type: 'PLAYING',
         url: 'https://www.youtube.com/watch?v=_EXAftql0Xg'
         }
