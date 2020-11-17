@@ -20,15 +20,23 @@ client.on("ready", () => {
   client.user.setPresence({
        status: "online",
        activity: {
-        name: 'Have a Nice Day!',
+        name: 'Hahaha',
         type: 'PLAYING',
         url: 'https://www.youtube.com/watch?v=_EXAftql0Xg'
         }
-    })
+	})
+
+	// client.channels.cache.get("771677054352621579").send("🎈");
+	
+	
   console.log(`Logged in as ${client.user.tag}!`)
 })
 
 client.on('message', message => {
+	if(message.author.bot && message.author.username === 'DSC MESCOE' ){
+		message.react('✅')
+	}
+
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
@@ -79,6 +87,8 @@ client.on('message', message => {
 		console.error(error);
 		message.reply('there was an error trying to execute that command!');
 	}
+
+	
 });
 
 client.login(process.env.BOT_TOKEN)
