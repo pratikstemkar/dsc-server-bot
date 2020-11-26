@@ -20,7 +20,7 @@ client.on("ready", () => {
   client.user.setPresence({
        status: "online",
        activity: {
-        name: 'Have a Nice Day!',
+        name: '🎥Hachi➜Saturday, 28th Nov 10PM',
         type: 'PLAYING',
         url: 'https://www.youtube.com/watch?v=_EXAftql0Xg'
         }
@@ -33,7 +33,7 @@ client.on("ready", () => {
 })
 
 client.on('message', message => {
-	if(message.author.bot && message.author.username === 'DSC MESCOE' ){
+	if(message.author.bot && message.author.username === 'DSC MESCOE' && message.channel.type != 'dm'){
 		message.react('✅')
 	}
 
@@ -50,6 +50,8 @@ client.on('message', message => {
 	if (command.guildOnly && message.channel.type === 'dm') {
 		return message.reply('I can\'t execute that command inside DMs!');
 	}
+
+	
 
 	if (command.args && !args.length) {
 		let reply = `You didn't provide any arguments, ${message.author}!`;
