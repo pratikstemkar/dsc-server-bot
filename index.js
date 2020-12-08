@@ -20,7 +20,7 @@ client.on("ready", () => {
   client.user.setPresence({
        status: "online",
        activity: {
-        name: 'Have a Nice Day!',
+        name: 'Hunger Games 1➜Friday 11 December, 2020',
         type: 'PLAYING',
         url: 'https://www.youtube.com/watch?v=_EXAftql0Xg'
         }
