@@ -18,7 +18,8 @@ module.exports = {
 	aliases: ['christmas', 'santa'],
 	async execute(message) {
         const christmas = await getImg();
-        message.channel.send(`Merry Christmas ${message.author}! 🎅🎄\n${christmas.urls.regular}`)
+        message.channel.send(`**Merry Christmas ${message.author}! **🎅🎄`)
+        message.channel.send(christmas.urls.regular)
         console.log(christmas.urls.regular)
 	},
 };
