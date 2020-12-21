@@ -33,9 +33,9 @@ client.on("ready", () => {
 })
 
 client.on('message', message => {
-	if(message.author.bot && message.author.username === 'DSC MESCOE' && message.channel.type != 'dm'){
-		message.react('✅').then(message.react('🎅')).then(message.react('🎄'))
-	}
+	// if(message.author.bot && message.author.username === 'DSC MESCOE' && message.channel.type != 'dm'){
+	// 	message.react('✅').then(message.react('🎅')).then(message.react('🎄'))
+	// }
 
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
