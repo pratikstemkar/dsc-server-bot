@@ -20,7 +20,7 @@ client.on("ready", () => {
   client.user.setPresence({
        status: "online",
        activity: {
-        name: 'Green Book➜Tonight 10PM',
+        name: 'Happy New Year!',
         type: 'PLAYING',
         url: 'https://www.youtube.com/watch?v=g-OF7KGyDis'
         }
