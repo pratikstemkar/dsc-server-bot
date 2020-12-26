@@ -20,8 +20,8 @@ client.on("ready", () => {
   client.user.setPresence({
        status: "online",
        activity: {
-        name: 'Merry Christmas!',
-        type: 'STREAMING',
+        name: 'Green Book➜Tonight 10PM',
+        type: 'PLAYING',
         url: 'https://www.youtube.com/watch?v=g-OF7KGyDis'
         }
 	})
@@ -33,9 +33,9 @@ client.on("ready", () => {
 })
 
 client.on('message', message => {
-	// if(message.author.bot && message.author.username === 'DSC MESCOE' && message.channel.type != 'dm'){
-	// 	message.react('✅').then(message.react('🎅')).then(message.react('🎄'))
-	// }
+	if(message.author.bot && message.author.username === 'DSC MESCOE' && message.channel.type != 'dm'){
+		message.react('✅')
+	}
 
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
