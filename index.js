@@ -20,8 +20,8 @@ client.on("ready", () => {
   client.user.setPresence({
        status: "online",
        activity: {
-		name: 'Happy New Year!',
-        type: 'STREAMING',
+		name: 'Have a Nice Day!',
+        type: 'PLAYING',
         url: 'https://www.youtube.com/watch?v=KRO-2hUpcZ8'
         }
 	})
@@ -33,9 +33,9 @@ client.on("ready", () => {
 })
 
 client.on('message', message => {
-	// if(message.author.bot && message.author.username === 'DSC MESCOE' && message.channel.type != 'dm'){
-	// 	message.react('✅')
-	// }
+	if(message.author.bot && message.author.username === 'DSC MESCOE' && message.channel.type != 'dm'){
+		message.react('✅')
+	}
 
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
