@@ -34,9 +34,21 @@ client.on("ready", () => {
 
 client.on('message', message => {
 	if(message.author.bot && message.author.username === 'DSC MESCOE' && message.channel.type != 'dm'){
-		message.react('✅').then(
-			message.react("760082275831775242").then(
-				message.react("871264451557482536")
+		message.react("871266180432818206").then(
+			message.react("871268015679893534").then(
+				message.react("871267676415225857").then(
+					message.react("871264451557482536").then(
+						message.react("871266464848576542").then(
+							message.react("871265865591574548").then(
+								message.react("871268103231778866").then(
+									message.react("871267765728714784").then(
+										message.react("871267907823345674")
+									)
+								)
+							)
+						)
+					)
+				)
 			)
 		)
 	}
