@@ -20,8 +20,8 @@ client.on("ready", () => {
   client.user.setPresence({
        status: "online",
        activity: {
-		name: 'Happy Friendship Day!',
-        type: 'STREAMING',
+		name: 'Have a Nice Day!',
+        type: 'PLAYING',
         url: 'https://www.youtube.com/watch?v=KRO-2hUpcZ8'
         }
 	})
