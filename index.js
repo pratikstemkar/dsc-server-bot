@@ -35,7 +35,9 @@ client.on("ready", () => {
 client.on('message', message => {
 	if(message.author.bot && message.author.username === 'DSC MESCOE' && message.channel.type != 'dm'){
 		message.react('✅').then(
-			message.react("760082275831775242")
+			message.react("760082275831775242").then(
+				message.react("793393280834469918")
+			)
 		)
 	}
 
